@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RELOHA Support & Privacy Policy" />
+  <title>RELOHA | Support & Privacy</title>
+
+  <style>
+    :root {
+      --bg: #f4f0e7;
+      --bg-soft: #faf7f0;
+      --green: #244337;
+      --green-soft: #5f7863;
+      --sage: #dfe7d8;
+      --gold: #b89b59;
+      --text: #292c27;
+      --muted: #77786f;
+      --line: rgba(36, 67, 55, 0.12);
+      --white: rgba(255, 255, 255, 0.68);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 90% 5%, rgba(177, 196, 158, .30), transparent 25%),
+        radial-gradient(circle at 5% 30%, rgba(220, 204, 166, .25), transparent 28%),
+        var(--bg);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+      line-height: 1.85;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(244, 240, 231, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      color: var(--green);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 110px 24px 100px;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .32em;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      color: var(--green);
+      font-size: clamp(55px, 10vw, 100px);
+      line-height: .95;
+      margin: 0 0 30px;
+      letter-spacing: -.045em;
+    }
+
+    .hero-copy {
+      font-size: clamp(24px, 4vw, 39px);
+      line-height: 1.45;
+      letter-spacing: .04em;
+      margin-bottom: 24px;
+    }
+
+    .hero-description {
+      max-width: 600px;
+      color: #62645d;
+      font-size: 15px;
+    }
+
+    section {
+      padding: 90px 24px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .30em;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--green);
+      font-size: clamp(35px, 6vw, 55px);
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: var(--green);
+      font-size: 18px;
+    }
+
+    .lead {
+      max-width: 680px;
+      color: #66685f;
+      margin-bottom: 40px;
+    }
+
+    .support {
+      background: rgba(255, 255, 255, .35);
+      border-top: 1px solid rgba(255,255,255,.7);
+      border-bottom: 1px solid rgba(255,255,255,.7);
+    }
+
+    .contact-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 17px 24px;
+      background: var(--green);
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      box-shadow: 0 16px 45px rgba(36, 67, 55, .14);
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 50%;
+      font-size: 20px;
+    }
+
+    .contact-small {
+      display: block;
+      font-size: 11px;
+      opacity: .7;
+      line-height: 1.2;
+    }
+
+    .privacy-intro {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .privacy-card {
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid rgba(36,67,55,.09);
+      border-radius: 24px;
+      box-shadow: 0 10px 35px rgba(52,61,45,.035);
+    }
+
+    .privacy-card p,
+    .privacy-card li {
+      color: #66685f;
+      font-size: 14px;
+    }
+
+    .privacy-card ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--sage);
+      font-size: 20px;
+    }
+
+    .policy-detail {
+      margin-top: 60px;
+      padding: 42px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.45);
+      border: 1px solid var(--line);
+    }
+
+    .policy-detail h3 {
+      margin-top: 34px;
+      margin-bottom: 8px;
+    }
+
+    .policy-detail h3:first-child {
+      margin-top: 0;
+    }
+
+    .policy-detail p,
+    .policy-detail li {
+      color: #62645d;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 70px 24px;
+      background: var(--green);
+      color: rgba(255,255,255,.82);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-brand {
+      color: white;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .footer-message {
+      margin: 15px 0 35px;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .footer-small {
+      font-size: 12px;
+      opacity: .65;
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        gap: 14px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding-top: 85px;
+        padding-bottom: 75px;
+        min-height: auto;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+      .privacy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .policy-detail {
+        padding: 26px 22px;
+      }
+
+      .contact-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">RELOHA</div>
+
+    <nav class="nav-links">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">PLANTS · JOURNAL · MEMORIES</div>
+
+      <h1>RELOHA</h1>
+
+      <div class="hero-copy">
+        植物と過ごす時間を、<br>
+        もっと豊かに。
+      </div>
+
+      <p class="hero-description">
+        RELOHAは、写真や日々のお世話を記録し、
+        植物が育っていく日々を振り返って楽しむための
+        植物成長記録アプリです。
+      </p>
+    </div>
+  </section>
+
+
+  <section class="support" id="support">
+    <div class="container">
+
+      <div class="section-label">SUPPORT</div>
+      <h2>サポート</h2>
+
+      <p class="lead">
+        RELOHAに関するご質問、不具合のご報告、
+        機能についてのご要望などがございましたら、
+        下記のお問い合わせ先までご連絡ください。
+      </p>
+
+      <a class="contact-card"
+         href="mailto:budsbuds.official@gmail.com">
+
+        <span class="contact-icon">✉</span>
+
+        <span>
+          <span class="contact-small">CONTACT</span>
+          budsbuds.official@gmail.com
+        </span>
+
+      </a>
+
+    </div>
+  </section>
+
+
+  <section id="privacy">
+    <div class="container">
+
+      <div class="section-label">PRIVACY POLICY</div>
+      <h2>プライバシーポリシー</h2>
+
+      <p class="privacy-intro">
+        RELOHA（以下「本アプリ」）は、
+        ユーザーのプライバシーを尊重し、
+        本アプリで取り扱う情報を適切に管理します。
+        以下に、本アプリにおける情報の取り扱いについて説明します。
+      </p>
+
+
+      <div class="privacy-grid">
+
+        <article class="privacy-card">
+          <div class="icon">📱</div>
+          <h3>植物の記録データ</h3>
+          <p>
+            植物情報、ジャーナル、お世話の記録、
+            アプリ内の設定など、本アプリで作成したデータは、
+            原則としてユーザーの端末内に保存されます。
+          </p>
+        </article>
+
+
+        <article class="privacy-card">
+          <div class="icon">📷</div>
+          <h3>写真・カメラ</h3>
+          <p>
+            植物の写真を登録・撮影するため、
+            ユーザーの許可を得たうえで
+            写真ライブラリまたはカメラへアクセスします。
+            これらは本アプリの記録機能を提供する目的で使用します。
+          </p>
+        </article>
+
+
+        <article class="privacy-card">
+          <div class="icon">🔔</div>
+          <h3>通知</h3>
+          <p>
+            お世話のリマインダーなどを表示するため、
+            ユーザーの許可を得たうえで通知機能を使用します。
+            本アプリでは、端末上でスケジュールされる
+            ローカル通知を利用します。
+          </p>
+        </article>
+
+
+        <article class="privacy-card">
+          <div class="icon">☀️</div>
+          <h3>天気情報</h3>
+          <p>
+            天気表示のため、ユーザーがアプリ内で選択した地域に基づき、
+            Apple Weather（WeatherKit）から天気情報を取得します。
+            本アプリは、端末のGPS等を利用して
+            ユーザーの現在地を取得する仕様ではありません。
+          </p>
+        </article>
+
+
+        <article class="privacy-card">
+          <div class="icon">◈</div>
+          <h3>Premium・アプリ内購入</h3>
+          <p>
+            Premium機能の購入には、
+            AppleのApp StoreおよびStoreKitを利用します。
+            決済処理はAppleが提供する仕組みを通じて行われ、
+            本アプリの開発者がユーザーの
+            クレジットカード番号等の決済情報を直接取得することはありません。
+          </p>
+        </article>
+
+
+        <article class="privacy-card">
+          <div class="icon">♢</div>
+          <h3>広告・トラッキング</h3>
+          <p>
+            現在の本アプリでは、第三者広告の配信を目的とした
+            広告SDKや、ユーザーを他社のアプリやWebサイトを横断して
+            追跡する目的のトラッキング機能は使用していません。
+          </p>
+        </article>
+
+      </div>
+
+
+      <div class="policy-detail">
+
+        <h3>1. 本アプリが取り扱う情報</h3>
+
+        <p>
+          本アプリでは、植物の名前、写真、植物に関するメモ、
+          ジャーナル、お世話の記録、選択した地域、
+          アプリ内設定など、ユーザーが本アプリの機能を利用するために
+          入力または作成した情報を取り扱います。
+        </p>
+
+        <p>
+          これらのアプリデータは、原則としてユーザーの端末内に保存されます。
+          現在の本アプリでは、アカウント登録機能を提供しておらず、
+          植物の記録データをRELOHA独自のユーザーアカウントに
+          紐づけてサーバーへ保存する仕組みは提供していません。
+        </p>
+
+
+        <h3>2. 写真およびカメラへのアクセス</h3>
+
+        <p>
+          本アプリは、植物の写真を登録するために写真ライブラリを、
+          写真を撮影するためにカメラを利用する場合があります。
+          アクセスはユーザーが許可した場合にのみ行われます。
+        </p>
+
+
+        <h3>3. 通知</h3>
+
+        <p>
+          本アプリは、お世話のリマインダーなどを表示するため、
+          ユーザーの許可を得たうえで通知機能を使用します。
+          通知は端末上でスケジュールされるローカル通知として利用されます。
+        </p>
+
+
+        <h3>4. 天気情報</h3>
+
+        <p>
+          本アプリは天気情報を表示するため、
+          ユーザーがアプリ内で選択した地域に対応する情報を利用して、
+          Apple Weather（WeatherKit）から天気データを取得します。
+        </p>
+
+        <p>
+          本アプリは、GPS等を利用してユーザーの現在地を
+          自動的に取得する機能を使用していません。
+          天気データの提供にはAppleのサービスが利用されます。
+        </p>
+
+
+        <h3>5. Premium機能およびアプリ内購入</h3>
+
+        <p>
+          本アプリでは、一部の機能を利用するための
+          Premiumアプリ内購入を提供する場合があります。
+          購入処理および購入状態の確認には、
+          AppleのApp StoreおよびStoreKitを利用します。
+        </p>
+
+        <p>
+          App Store上で行われる決済はAppleによって処理されます。
+          RELOHAの開発者が、ユーザーのクレジットカード番号、
+          セキュリティコード等の決済情報を直接取得または保存することはありません。
+        </p>
+
+
+        <h3>6. 第三者サービスへの情報の送信</h3>
+
+        <p>
+          本アプリは、機能の提供に必要な範囲でAppleが提供するサービスと通信します。
+          具体的には、天気情報の取得にApple Weather（WeatherKit）を、
+          Premium機能の購入および購入状態の確認に
+          App Store / StoreKitを利用します。
+        </p>
+
+        <p>
+          現在の本アプリでは、第三者広告の配信や、
+          広告目的でのユーザープロファイル作成のために
+          ユーザーの植物記録や写真を第三者へ販売・提供することはありません。
+        </p>
+
+
+        <h3>7. お問い合わせ時に提供される情報</h3>
+
+        <p>
+          ユーザーがお問い合わせメールを送信した場合、
+          メールアドレス、メール本文、
+          およびユーザーが任意で添付・記載した情報を、
+          お問い合わせへの回答および問題解決のために利用します。
+        </p>
+
+
+        <h3>8. データの保存・削除</h3>
+
+        <p>
+          本アプリ内の植物記録等は、原則としてユーザーの端末内に保存されます。
+          本アプリ内で削除可能なデータについては、
+          アプリの削除機能を利用して削除できます。
+        </p>
+
+        <p>
+          また、本アプリを端末から削除した場合、
+          本アプリが端末内に保存しているデータは、
+          OSの仕様に従って削除されます。
+        </p>
+
+        <p>
+          お問い合わせによって開発者へ提供された情報について
+          削除を希望される場合は、
+          budsbuds.official@gmail.com までご連絡ください。
+          法令上または運営上保存が必要な場合を除き、
+          合理的な範囲で対応します。
+        </p>
+
+
+        <h3>9. プライバシーポリシーの変更</h3>
+
+        <p>
+          本アプリの機能追加、利用サービスの変更、
+          法令その他の必要に応じて、
+          本プライバシーポリシーを変更することがあります。
+          重要な変更がある場合には、
+          本ページその他の適切な方法でお知らせします。
+        </p>
+
+
+        <h3>10. お問い合わせ</h3>
+
+        <p>
+          本ポリシーおよびRELOHAに関するお問い合わせは、
+          以下までお願いいたします。
+        </p>
+
+        <p>
+          <strong>RELOHA Support</strong><br>
+          Email:
+          <a href="mailto:budsbuds.official@gmail.com">
+            budsbuds.official@gmail.com
+          </a>
+        </p>
+
+
+        <h3>制定日</h3>
+
+        <p>2026年10月4日</p>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-brand">RELOHA</div>
+
+    <div class="footer-message">
+      植物と過ごす時間が、<br>
+      きっと、明日を豊かにする。
+    </div>
+
+    <div class="footer-small">
+      © 2026 RELOHA. All Rights Reserved.<br>
+      Contact: budsbuds.official@gmail.com
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
