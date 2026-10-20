@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://budsbudsofficial-web.github.io/reloha-support/sitemap.xml
