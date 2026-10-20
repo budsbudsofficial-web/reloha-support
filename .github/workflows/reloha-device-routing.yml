@@ -1,0 +1,47 @@
+name: RELOHA device auto routing
+on:
+  push:
+    paths:
+      - .github/workflows/reloha-device-routing.yml
+permissions:
+  contents: write
+jobs:
+  routing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Add mobile-only redirect to approved desktop homepage
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("index.html")
+          s=p.read_text(encoding="utf-8")
+          marker="RELOHA_DEVICE_ROUTING_V1"
+          if marker not in s:
+              script='''<script id="RELOHA_DEVICE_ROUTING_V1">
+          (function(){
+            var ua=navigator.userAgent||"";
+            var isPhone=/iPhone|iPod|Android.*Mobile|Windows Phone/i.test(ua);
+            if(isPhone && !/[?&]desktop=1(?:&|$)/.test(location.search)){
+              location.replace(new URL("./mobile/"+location.search+location.hash,location.href).href);
+            }
+          })();
+          </script>'''
+              import re
+              m=re.search(r"<head(?:\\s[^>]*)?>",s,re.I)
+              if not m:
+                  raise RuntimeError("Cannot safely find HTML head; no change made")
+              s=s[:m.end()]+script+s[m.end():]
+              p.write_text(s,encoding="utf-8")
+          PY
+      - name: Commit routing only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-route iPhone visitors to approved mobile site"
+            git push
+          fi
