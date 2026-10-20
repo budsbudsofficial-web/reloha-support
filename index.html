@@ -770,7 +770,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   const y=Math.max(0,-wrap.getBoundingClientRect().top);
   const max=Math.max(0,wrap.offsetHeight-window.innerHeight);
   const inside=Math.min(max,y);
-  if(ready){try{frame.contentWindow.scrollTo(0,inside)}catch(e){}}
+  if(ready){try{const child=frame.contentWindow;child.__relohaProgress=max>0?inside/max:0;if(typeof child.render==='function')child.render();}catch(e){console.warn('RELOHA animation sync failed',e)}}
   document.body.classList.toggle('reloha-after-intro',y>=max-2);
  }
  frame.addEventListener('load',function(){
