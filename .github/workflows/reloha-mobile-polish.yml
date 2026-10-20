@@ -1,4 +1,4 @@
-name: RELOHA mobile header spacing v4
+name: RELOHA mobile header rollback v5
 on:
   push:
     paths:
@@ -24,15 +24,10 @@ jobs:
           for file in source.glob("*.png"):
               image=Image.open(file).convert("RGB")
               # Remove the original iOS status bar, preserving the actual app UI.
-              # Remove the status bar, but restore generous space above app headings.
-              # Previous version removed 58px without replacement, clipping titles.
-              content=image.crop((0,58,image.width,image.height))
-              from PIL import ImageStat
-              sample=content.crop((0,0,image.width,min(35,content.height)))
-              tone=tuple(round(x) for x in ImageStat.Stat(sample).median[:3])
-              padded=Image.new("RGB",(image.width,content.height+104),tone)
-              padded.paste(content,(0,104))
-              padded.save(target/file.name,optimize=True)
+              # Restore unmodified screenshots except for the original status-bar strip.
+              # Do not insert artificial color/blur padding over app content.
+              cropped=image.crop((0,58,image.width,image.height))
+              cropped.save(target/file.name,optimize=True)
           p=Path("mobile/index.html")
           s=p.read_text()
           # Mobile-only copies: PC screenshots and desktop HTML stay untouched.
@@ -78,14 +73,8 @@ jobs:
           @media(max-width:430px){.after .features{gap:60px!important}.after .feature{margin-inline:4px!important}}
               """
               s=s.replace("</head>","<style>"+glass_css+"</style></head>",1)
-          # Extra visual breathing room so the logo does not overlap the device.
-          if "RELOHA MOBILE HEADER V4" not in s:
-              header_css = """/* RELOHA MOBILE HEADER V4 */
-          #phone.phone{margin-top:42px!important}
-          #phone .screen img{object-fit:contain!important;object-position:center top!important}
-          .after .feature img{object-fit:contain!important;object-position:center top!important}
-          """
-              s=s.replace("</head>","<style>"+header_css+"</style></head>",1)
+          # Remove the previous header-padding override if it was applied.
+          s=re.sub(r'<style>/\\* RELOHA MOBILE HEADER V4 \\*/.*?</style>','',s,flags=re.S)
           p.write_text(s)
           PY
       - name: Commit mobile-only updates
