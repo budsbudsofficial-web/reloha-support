@@ -1,4 +1,4 @@
-name: RELOHA mobile screenshot precision v6
+name: RELOHA calendar copy wrap fix
 on:
   push:
     paths:
@@ -90,6 +90,8 @@ jobs:
               s=s.replace("</head>","<style>"+glass_css+"</style></head>",1)
           # Remove the previous header-padding override if it was applied.
           s=re.sub(r'<style>/\\* RELOHA MOBILE HEADER V4 \\*/.*?</style>','',s,flags=re.S)
+          # Calendar copy only: keep every existing visual style untouched.
+          s=s.replace('植物と過ごした日々を、カレンダーで振り返る。','植物と過ごした日々を、<br>カレンダーで振り返る。')
           p.write_text(s)
           PY
       - name: Commit mobile-only updates
