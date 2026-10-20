@@ -69,7 +69,7 @@ jobs:
           #phone .screen img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center top!important}
           #phone:before{display:none!important}
           @media(max-width:430px){.after .features{gap:60px!important}.after .feature{margin-inline:4px!important}}
-"""
+              """
               s=s.replace("</head>","<style>"+glass_css+"</style></head>",1)
           p.write_text(s)
           PY
