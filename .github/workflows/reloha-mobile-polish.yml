@@ -1,4 +1,4 @@
-name: RELOHA mobile polish
+name: RELOHA mobile polish v2
 on:
   push:
     paths:
@@ -10,38 +10,56 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-      - name: Polish mobile site only
+      - name: Install image tools
+        run: python3 -m pip install --break-system-packages Pillow
+      - name: Refine mobile presentation and remove all screenshot status bars
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          from PIL import Image
+          import re
+          source=Path("assets/screens")
+          target=Path("mobile/screens")
+          target.mkdir(parents=True,exist_ok=True)
+          for file in source.glob("*.png"):
+              image=Image.open(file).convert("RGB")
+              # Remove the original iOS status bar, preserving the actual app UI.
+              cropped=image.crop((0,58,image.width,image.height))
+              cropped.save(target/file.name,optimize=True)
           p=Path("mobile/index.html")
           s=p.read_text()
-          marker="/* RELOHA MOBILE FINISH v1 */"
+          # Mobile-only copies: PC screenshots and desktop HTML stay untouched.
+          s=s.replace('../assets/screens/','./screens/')
+          marker="/* RELOHA MOBILE GLASS v2 */"
           if marker not in s:
               css="""<style>
-          /* RELOHA MOBILE FINISH v1 */
-          #phone.phone{width:min(73vw,310px,42svh);height:auto;aspect-ratio:750/1294;padding:8px;border:1px solid rgba(255,255,255,.65);background:linear-gradient(145deg,#464d49,#161b19 55%,#313a36);border-radius:clamp(30px,8vw,43px);box-shadow:0 28px 70px rgba(24,47,35,.33),inset 0 1px 1px rgba(255,255,255,.5),0 0 0 2px rgba(28,35,30,.3)}
-          #phone .screen{border-radius:clamp(23px,6.5vw,34px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
-          #phone:before{content:"";position:absolute;z-index:3;top:12px;left:50%;transform:translateX(-50%);width:30%;height:15px;border-radius:0 0 14px 14px;background:#151b19;pointer-events:none}
-          .after .feature{position:relative;isolation:isolate;padding:30px 18px 36px;border:1px solid rgba(255,255,255,.78);border-radius:32px;background:linear-gradient(135deg,rgba(255,255,255,.70),rgba(255,255,255,.25) 65%,rgba(221,233,220,.25));box-shadow:0 20px 60px rgba(30,65,44,.09),inset 0 1px 1px rgba(255,255,255,.95);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden}
-          .after .feature:before{content:"";position:absolute;inset:0 0 auto;height:35%;background:linear-gradient(180deg,rgba(255,255,255,.48),transparent);pointer-events:none}
-          .after .feature img{position:relative;z-index:1;width:min(64vw,260px);max-height:none;aspect-ratio:750/1294;object-fit:cover;object-position:top;border:7px solid #202b26;border-radius:32px;box-shadow:0 24px 46px rgba(27,50,37,.27),inset 0 1px rgba(255,255,255,.5)}
-          .after .feature .label,.after .feature h3,.after .feature p{position:relative;z-index:1}
-          @media(max-width:430px){.after .features{gap:38px}.after .feature{margin-inline:10px}}
+          /* RELOHA MOBILE GLASS v2 */
+          .after{padding:90px 17px 100px;background:radial-gradient(ellipse at 20% 15%,#fffdf6 0%,transparent 38%),linear-gradient(180deg,#f7f2e7,#edf1e7 62%,#f7f2e7)}
+          .after>h2{letter-spacing:.045em}
+          .after>p{max-width:325px;margin-inline:auto}
+          .after .features{gap:68px;max-width:390px}
+          .after .feature{padding:35px 15px 34px;border-radius:37px;border:1px solid rgba(255,255,255,.96);background:linear-gradient(135deg,rgba(255,255,255,.87),rgba(255,255,255,.43) 40%,rgba(223,235,226,.38) 78%,rgba(255,255,255,.7));box-shadow:0 27px 65px rgba(32,61,42,.13),0 2px 9px rgba(32,61,42,.035),inset 0 2px 1px rgba(255,255,255,1),inset 1px 0 1px rgba(255,255,255,.8);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5)}
+          .after .feature:before{height:45%;background:linear-gradient(165deg,rgba(255,255,255,.8),rgba(255,255,255,.1) 65%,transparent)}
+          .after .feature:after{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.58);border-radius:30px;pointer-events:none}
+          .after .feature .label{font-size:10px;letter-spacing:.24em;color:#77947e}
+          .after .feature img{width:min(65vw,258px);height:auto;max-height:none;aspect-ratio:750/1276;object-fit:cover;object-position:top;border:8px solid #26322d;border-radius:37px;box-shadow:0 28px 55px rgba(20,44,29,.31),0 8px 16px rgba(20,44,29,.13),0 0 0 1px rgba(255,255,255,.8),inset 0 1px 1px rgba(255,255,255,.7);filter:none}
+          .after .feature h3{font-size:23px;line-height:1.55;letter-spacing:.03em;margin-top:23px}
+          .after .feature p{max-width:265px;margin-inline:auto;line-height:2}
+          #phone.phone{width:min(70vw,300px);height:auto;aspect-ratio:750/1276;max-height:60svh;padding:8px;border:1px solid rgba(255,255,255,.75);border-radius:clamp(32px,9vw,43px);background:linear-gradient(135deg,#66736a,#1a2520 34%,#151c18 72%,#5b675d);box-shadow:0 34px 85px rgba(20,48,31,.38),0 0 0 2px #27342d,inset 0 2px 2px rgba(255,255,255,.65)}
+          #phone .screen{border-radius:clamp(25px,7vw,35px)}
+          #phone .screen:before{display:none}
+          #phone:before{display:none}
+          #phone .screen img{object-fit:cover;object-position:top}
+          .after .store{margin-top:16px;box-shadow:0 13px 30px rgba(26,67,41,.25)}
+          @media(max-width:420px){.after .feature{margin-inline:2px}.after .features{gap:55px}}
           </style>"""
+              assert "</head>" in s
               s=s.replace("</head>",css+"</head>",1)
-          if "05 — CALENDAR" not in s:
-              extra="""<div class="feature"><div class="label">05 — CALENDAR</div><img alt="カレンダーで日々の記録を振り返る" loading="lazy" src="../assets/screens/calendar.png"><h3>毎日の記録を、<br>ひと目で。</h3><p>植物と過ごした日々を、カレンダーで振り返る。</p></div><div class="feature"><div class="label">06 — TROPHY</div><img alt="トロフィーで育てた時間を振り返る" loading="lazy" src="../assets/screens/trophy.png"><h3>続けた日々が、<br>見えてくる。</h3><p>積み重ねた記録が、育てる楽しさにつながる。</p></div><div class="feature"><div class="label">07 — JOURNAL</div><img alt="ジャーナルで植物との思い出を記録" loading="lazy" src="../assets/screens/journal.png"><h3>植物との時間を、<br>言葉でも残す。</h3><p>写真だけでは伝わらない気づきも、記録に。</p></div>"""
-              needle='</div><a class="store"'
-              assert needle in s
-              s=s.replace(needle,extra+needle,1)
           p.write_text(s)
           PY
       - name: Commit mobile-only updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mobile/index.html
-          git diff --cached --quiet || (git commit -m "Polish mobile iPhone frame, glass UI and missing sections" && git push)
+          git add mobile/index.html mobile/screens/
+          git diff --cached --quiet || (git commit -m "Enhance mobile glass styling and remove iOS status bars" && git push)
