@@ -1,0 +1,47 @@
+name: RELOHA mobile polish
+on:
+  push:
+    paths:
+      - .github/workflows/reloha-mobile-polish.yml
+permissions:
+  contents: write
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Polish mobile site only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("mobile/index.html")
+          s=p.read_text()
+          marker="/* RELOHA MOBILE FINISH v1 */"
+          if marker not in s:
+              css="""<style>
+          /* RELOHA MOBILE FINISH v1 */
+          #phone.phone{width:min(73vw,310px,42svh);height:auto;aspect-ratio:750/1294;padding:8px;border:1px solid rgba(255,255,255,.65);background:linear-gradient(145deg,#464d49,#161b19 55%,#313a36);border-radius:clamp(30px,8vw,43px);box-shadow:0 28px 70px rgba(24,47,35,.33),inset 0 1px 1px rgba(255,255,255,.5),0 0 0 2px rgba(28,35,30,.3)}
+          #phone .screen{border-radius:clamp(23px,6.5vw,34px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+          #phone:before{content:"";position:absolute;z-index:3;top:12px;left:50%;transform:translateX(-50%);width:30%;height:15px;border-radius:0 0 14px 14px;background:#151b19;pointer-events:none}
+          .after .feature{position:relative;isolation:isolate;padding:30px 18px 36px;border:1px solid rgba(255,255,255,.78);border-radius:32px;background:linear-gradient(135deg,rgba(255,255,255,.70),rgba(255,255,255,.25) 65%,rgba(221,233,220,.25));box-shadow:0 20px 60px rgba(30,65,44,.09),inset 0 1px 1px rgba(255,255,255,.95);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden}
+          .after .feature:before{content:"";position:absolute;inset:0 0 auto;height:35%;background:linear-gradient(180deg,rgba(255,255,255,.48),transparent);pointer-events:none}
+          .after .feature img{position:relative;z-index:1;width:min(64vw,260px);max-height:none;aspect-ratio:750/1294;object-fit:cover;object-position:top;border:7px solid #202b26;border-radius:32px;box-shadow:0 24px 46px rgba(27,50,37,.27),inset 0 1px rgba(255,255,255,.5)}
+          .after .feature .label,.after .feature h3,.after .feature p{position:relative;z-index:1}
+          @media(max-width:430px){.after .features{gap:38px}.after .feature{margin-inline:10px}}
+          </style>"""
+              s=s.replace("</head>",css+"</head>",1)
+          if "05 — CALENDAR" not in s:
+              extra="""<div class="feature"><div class="label">05 — CALENDAR</div><img alt="カレンダーで日々の記録を振り返る" loading="lazy" src="../assets/screens/calendar.png"><h3>毎日の記録を、<br>ひと目で。</h3><p>植物と過ごした日々を、カレンダーで振り返る。</p></div><div class="feature"><div class="label">06 — TROPHY</div><img alt="トロフィーで育てた時間を振り返る" loading="lazy" src="../assets/screens/trophy.png"><h3>続けた日々が、<br>見えてくる。</h3><p>積み重ねた記録が、育てる楽しさにつながる。</p></div><div class="feature"><div class="label">07 — JOURNAL</div><img alt="ジャーナルで植物との思い出を記録" loading="lazy" src="../assets/screens/journal.png"><h3>植物との時間を、<br>言葉でも残す。</h3><p>写真だけでは伝わらない気づきも、記録に。</p></div>"""
+              needle='</div><a class="store"'
+              assert needle in s
+              s=s.replace(needle,extra+needle,1)
+          p.write_text(s)
+          PY
+      - name: Commit mobile-only updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mobile/index.html
+          git diff --cached --quiet || (git commit -m "Polish mobile iPhone frame, glass UI and missing sections" && git push)
