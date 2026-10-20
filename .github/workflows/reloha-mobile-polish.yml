@@ -1,4 +1,4 @@
-name: RELOHA mobile header rollback v5
+name: RELOHA mobile screenshot precision v6
 on:
   push:
     paths:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install image tools
-        run: python3 -m pip install --break-system-packages Pillow
+        run: python3 -m pip install --break-system-packages Pillow opencv-python-headless
       - name: Refine realistic metallic device, uncropped screenshots and glass cards
         run: |
           python3 - <<'PY'
@@ -24,10 +24,25 @@ jobs:
           for file in source.glob("*.png"):
               image=Image.open(file).convert("RGB")
               # Remove the original iOS status bar, preserving the actual app UI.
-              # Restore unmodified screenshots except for the original status-bar strip.
-              # Do not insert artificial color/blur padding over app content.
-              cropped=image.crop((0,58,image.width,image.height))
-              cropped.save(target/file.name,optimize=True)
+              if file.stem in ("home","growth-ring"):
+                  # The title overlaps the original iOS status-bar zone.
+                  # Keep all original pixels and remove ONLY the small status icons
+                  # using localized inpainting, never a full-width blur/padding strip.
+                  import cv2, numpy as np
+                  a=np.array(image)
+                  mask=np.zeros(a.shape[:2],dtype=np.uint8)
+                  h,w=mask.shape
+                  # Status icons: left carrier, center clock, right signal/battery.
+                  # Mask only topmost 35px, preserving app headings below.
+                  mask[0:34,0:220]=255
+                  mask[0:34,302:455]=255
+                  mask[0:34,585:w]=255
+                  result=cv2.inpaint(cv2.cvtColor(a,cv2.COLOR_RGB2BGR),mask,5,cv2.INPAINT_TELEA)
+                  Image.fromarray(cv2.cvtColor(result,cv2.COLOR_BGR2RGB)).save(target/file.name,optimize=True)
+              else:
+                  # Leave all previously correct screens exactly as before.
+                  cropped=image.crop((0,58,image.width,image.height))
+                  cropped.save(target/file.name,optimize=True)
           p=Path("mobile/index.html")
           s=p.read_text()
           # Mobile-only copies: PC screenshots and desktop HTML stay untouched.
