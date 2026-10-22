@@ -13,10 +13,16 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
-  window.gtag('config', 'G-073EKNSKE9', {
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false
-  });
+  var config = {allow_google_signals: false, allow_ad_personalization_signals: false};
+  // Preserve the original search referrer through our same-origin mobile redirect.
+  if (location.pathname === base + 'mobile/' || location.pathname === base + 'mobile/index.html') {
+    try {
+      var entry = JSON.parse(window.sessionStorage.getItem('reloha_entry_referrer') || 'null');
+      window.sessionStorage.removeItem('reloha_entry_referrer');
+      if (entry && Date.now() - entry.time >= 0 && Date.now() - entry.time < 60000 && typeof entry.value === 'string') config.page_referrer = entry.value;
+    } catch (_) {}
+  }
+  window.gtag('config', 'G-073EKNSKE9', config);
   var tag = document.createElement('script');
   tag.async = true;
   tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-073EKNSKE9';

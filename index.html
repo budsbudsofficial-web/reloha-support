@@ -5,13 +5,14 @@
   var ua=navigator.userAgent||"";
   var isPhone=/iPhone|iPod|Android.*Mobile|Windows Phone/i.test(ua);
   if(isPhone && !/[?&]desktop=1(?:&|$)/.test(location.search)){
+    try{sessionStorage.setItem("reloha_entry_referrer",JSON.stringify({value:document.referrer,time:Date.now()}));}catch(_){}
     location.replace(new URL("./mobile/"+location.search+location.hash,location.href).href);
   }
 })();
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<script>/* Dedicated iPhone experience: desktop source remains untouched. */if(window.matchMedia&&window.matchMedia('(max-width:720px)').matches&&!new URLSearchParams(location.search).has('desktop')){location.replace(new URL('./mobile/',location.href).href);}</script>
+<script>/* Dedicated iPhone experience: desktop source remains untouched. */if(window.matchMedia&&window.matchMedia('(max-width:720px)').matches&&!new URLSearchParams(location.search).has('desktop')){try{sessionStorage.setItem('reloha_entry_referrer',JSON.stringify({value:document.referrer,time:Date.now()}));}catch(_){}location.replace(new URL('./mobile/'+location.search+location.hash,location.href).href);}</script>
 <meta name="description" content="RELOHA — 植物と過ごした時間を記録し、小さな成長をあとから実感する植物成長記録アプリ。" />
 <meta name="theme-color" content="#f3efe5" />
 <title>RELOHA | Plant a richer tomorrow.</title>
