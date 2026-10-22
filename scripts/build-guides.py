@@ -14,6 +14,11 @@ for path in sorted((ROOT/'content/guides').glob('*.json')):
     faq=''.join(f'<details><summary>{esc(q)}</summary><p>{ans}</p></details>' for q,ans in a['faq'])
     refs=''.join(f'<li id="source-{i}"><a href="{esc(s["url"])}">{esc(s["name"])}</a><span>{esc(s["scope"])}</span></li>' for i,s in enumerate(a['sources'],1))
     related=''.join(f'<a href="../{esc(s)}/">{esc(t)}<span aria-hidden="true">↗</span></a>' for s,t in a['related'])
+    lead=esc(a['lead'])
+    if a.get('lead_tail'):
+        tail=esc(a['lead_tail'])
+        assert lead.endswith(tail)
+        lead=lead[:-len(tail)]+'<span class="phrase">'+tail+'</span>'
     text=f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(a['title'])}｜RELOHA植物ガイド</title>
@@ -26,7 +31,7 @@ for path in sorted((ROOT/'content/guides').glob('*.json')):
 <script defer src="/reloha-support/assets/analytics.js"></script></head>
 <body><a class="skip" href="#answer">本文へ移動</a><header><a class="logo" href="../../">RELOHA</a><a class="nav" href="../">植物ガイド一覧 <span aria-hidden="true">↗</span></a></header>
 <main><nav class="breadcrumbs" aria-label="パンくず"><a href="../../">RELOHA</a><span>/</span><a href="../">植物ガイド</a><span>/</span><span>{esc(a['category'])}</span></nav>
-<div class="hero"><div><p class="eyebrow">RELOHA JOURNAL / {esc(a['category'])}</p><h1>{a['heading']}</h1><p class="lead">{esc(a['lead'])}</p><p class="byline">RELOHA編集部 · <time datetime="2026-10-23">2026年10月23日 更新</time></p></div><figure><img src="../../assets/guide/{slug}.webp" alt="{esc(a['image_alt'])}" width="1200" height="800" fetchpriority="high"><figcaption>AI生成によるイメージ。症状や虫を同定する写真ではありません。</figcaption></figure></div>
+<div class="hero"><div><p class="eyebrow">RELOHA JOURNAL / {esc(a['category'])}</p><h1>{a['heading']}</h1><p class="lead">{lead}</p><p class="byline">RELOHA編集部 · <time datetime="2026-10-23">2026年10月23日 更新</time></p></div><figure><img src="../../assets/guide/{slug}.webp" alt="{esc(a['image_alt'])}" width="1200" height="800" fetchpriority="high"><figcaption>AI生成によるイメージ。症状や虫を同定する写真ではありません。</figcaption></figure></div>
 <article class="content"><aside class="answer" id="answer"><p class="eyebrow">まず、結論</p><p>{a['answer']}</p></aside>
 <section class="quick"><h2>今日やることは、この3つ</h2><ol>{''.join('<li>'+s+'</li>' for s in a['quick'])}</ol></section>
 <nav class="toc" aria-label="この記事の目次"><p>この記事でわかること</p><ol>{toc}<li><a href="#faq">よくある質問</a></li></ol></nav>
