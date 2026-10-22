@@ -1,0 +1,188 @@
+{
+  "checked_at_utc": "2026-10-22T17:55:18.186289+00:00",
+  "content_commit": "7471fd94ac60a350e48db894250a8283721f74c5",
+  "checks": [
+    {
+      "path": "guide/low-light/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "389338b2bc0489b1007cf36a2f5623ffb64ad0f056ac0f0ce88570e7b2d54b45",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/low-light/index.html"
+    },
+    {
+      "path": "guide/houseplant-journal/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "ccdf2b697edb9d900846f8fab9f512424ed589d85657240559900bc10fef4fd2",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/houseplant-journal/index.html"
+    },
+    {
+      "path": "guide/yellow-leaves/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "6244ea0f20fd81bc2caf1d3f35b0a2950054cf8a5bfb012d0aa807b11cc0ff04",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/yellow-leaves/index.html"
+    },
+    {
+      "path": "guide/fungus-gnats/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "0cd45387b3b8b96f00a16ca266ead81b110e9e13b05e4dac2bf1d87cb3133c13",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/fungus-gnats/index.html"
+    },
+    {
+      "path": "guide/brown-tips/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "aa3b4c9bdb63e4747889619c4a7339cf087f6110ac47029e6c3ad78a3306d62b",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/brown-tips/index.html"
+    },
+    {
+      "path": "guide/drooping-leaves/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "7a4062cb4a613f01f52bc621823d07c59c0623a99737a66b132ce71c3bd28317",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/drooping-leaves/index.html"
+    },
+    {
+      "path": "guide/plant-record-app/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "3728b9f802ce54b0b9651007ae70e30fbeb9d06f25d2cfc1880c3c1cfe35fa7c",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/plant-record-app/index.html"
+    },
+    {
+      "path": "guide/winter-watering/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "4562583d98663e8640fa0018183cbb56dc8c368f6e8f88f78694a47e34dbf28d",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/winter-watering/index.html"
+    },
+    {
+      "path": "guide/overwatered/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "4a931deea018e7b594058631ef37ceb830aebada74700d8b1836322fb44995f7",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/overwatered/index.html"
+    },
+    {
+      "path": "guide/watering-when/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "8b25a8d4a9aee0b15f30f1119e581e97dd7a2d71305649560853ab5d2afed3d2",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/watering-when/index.html"
+    },
+    {
+      "path": "guide/plant-photo-compare/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "0dcbb3d28dbdd421f686ffb0174b9654cf26cf49df3dd27655e6eaf2354b7608",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/plant-photo-compare/index.html"
+    },
+    {
+      "path": "guide/repotting-signs/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "e812665b5b3a5c0a2ada1877d75e39789d600e3c40836114489383d0e86ba900",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/repotting-signs/index.html"
+    },
+    {
+      "path": "guide/plant-growth-record/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "edef6c676fe5d5447c06c1981a6f56cf612c8dcac150831521442b96b4a8922e",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/plant-growth-record/index.html"
+    },
+    {
+      "path": "guide/plant-care-multiple/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "b022456c4706ec973520f2b286eb395fd35d38aa1ebf2ce06633932cab7d1535",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/plant-care-multiple/index.html"
+    },
+    {
+      "path": "guide/index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "150c24422093e776f31108612b0e0d831952c809806312dc0e7f34f5ad57fae1",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/guide/index.html"
+    },
+    {
+      "path": "assets/guide-editorial.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "0487f5dc97a6d5f804b0046a7dd4b8ba7de8c26e3443ef52c31dfec8a8a4cbbb",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide-editorial.css"
+    },
+    {
+      "path": "assets/guide/watering-care.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "c7448d3c096be03e55b0524fad6b66a365a24b581595bee4c205e5678d1daa37",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/watering-care.webp"
+    },
+    {
+      "path": "assets/guide/indoor-collection.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "7de75f63ef0fe7196f0a60c296bccff683b6fa54595d484e0f569d6f97b16ef8",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/indoor-collection.webp"
+    },
+    {
+      "path": "assets/guide/leaf-observation.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "5008b5086db33dc4de37afc3e546aac8a66941172537668b3eec17aa32379854",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/leaf-observation.webp"
+    },
+    {
+      "path": "assets/guide/reloha-promotion.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "3d73a14f2d525735f875d436029f83eaefa0e9d7e09a381040fd5be18f0405e2",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/reloha-promotion.webp"
+    },
+    {
+      "path": "assets/guide/fungus-gnats.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "f20d60d74a7dc9441d608487073b8f2151a332ab0626c600d7bb3d262ef1d563",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/fungus-gnats.webp"
+    },
+    {
+      "path": "assets/guide/plant-journal.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "ba3ad6754dbe9da3b9b998582b6d02b22def0e9299019344773a5598c4d8a927",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/plant-journal.webp"
+    },
+    {
+      "path": "assets/guide/plant-photography.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "936c95146c8e3fc30e1f775bd186c179c2cb2f1e960986923b72d0085d88eca8",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/plant-photography.webp"
+    },
+    {
+      "path": "assets/guide/brown-tips.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "42b6b476de599c5e8e59c143011915a5b9bcaefebacf874ea6b4705a6fa2bd0d",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/brown-tips.webp"
+    },
+    {
+      "path": "assets/guide/repotting-care.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "c3c5ff25623a4fb67faf9ac9818e44912181e1ca9f054993afde2fe48f17f0b8",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/repotting-care.webp"
+    },
+    {
+      "path": "assets/guide/winter-watering.webp",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "a83ec2cb709838e62d06a226a5a2cbba7e84728cc7e09655548f92f27133d7d3",
+      "final_url": "https://budsbudsofficial-web.github.io/reloha-support/assets/guide/winter-watering.webp"
+    }
+  ]
+}

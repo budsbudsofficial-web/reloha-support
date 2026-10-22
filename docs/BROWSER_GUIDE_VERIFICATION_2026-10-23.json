@@ -1,0 +1,517 @@
+{
+  "widths": [
+    {
+      "slug": "brown-tips",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "葉先が茶色い。切る前に、原因を確かめよう。",
+      "width": 305
+    },
+    {
+      "slug": "brown-tips",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "葉先が茶色い。切る前に、原因を確かめよう。",
+      "width": 375
+    },
+    {
+      "slug": "drooping-leaves",
+      "frame": "#narrow",
+      "heroLoaded": false,
+      "scrollWidth": 305,
+      "title": "しおれた葉に、すぐ水を足す前に。",
+      "width": 305
+    },
+    {
+      "slug": "drooping-leaves",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "しおれた葉に、すぐ水を足す前に。",
+      "width": 375
+    },
+    {
+      "slug": "fungus-gnats",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "観葉植物のコバエ、土から出ている？",
+      "width": 305
+    },
+    {
+      "slug": "fungus-gnats",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "観葉植物のコバエ、土から出ている？",
+      "width": 375
+    },
+    {
+      "slug": "houseplant-journal",
+      "frame": "#narrow",
+      "heroLoaded": false,
+      "scrollWidth": 305,
+      "title": "お世話の理由を、一言だけ残しておこう。",
+      "width": 305
+    },
+    {
+      "slug": "houseplant-journal",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "お世話の理由を、一言だけ残しておこう。",
+      "width": 375
+    },
+    {
+      "slug": "low-light",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "日差しが少ない部屋。植物に届く光を、見直そう。",
+      "width": 305
+    },
+    {
+      "slug": "low-light",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "日差しが少ない部屋。植物に届く光を、見直そう。",
+      "width": 375
+    },
+    {
+      "slug": "overwatered",
+      "frame": "#narrow",
+      "heroLoaded": false,
+      "scrollWidth": 305,
+      "title": "湿った土と、元気のない葉。根を疑う前の確認。",
+      "width": 305
+    },
+    {
+      "slug": "overwatered",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "湿った土と、元気のない葉。根を疑う前の確認。",
+      "width": 375
+    },
+    {
+      "slug": "plant-care-multiple",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "植物が増えても、お世話を迷子にしない。",
+      "width": 305
+    },
+    {
+      "slug": "plant-care-multiple",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "植物が増えても、お世話を迷子にしない。",
+      "width": 375
+    },
+    {
+      "slug": "plant-growth-record",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "今日の一枚が、あとから気づく成長になる。",
+      "width": 305
+    },
+    {
+      "slug": "plant-growth-record",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "今日の一枚が、あとから気づく成長になる。",
+      "width": 375
+    },
+    {
+      "slug": "plant-photo-compare",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "昔と今を、同じ目線で見比べよう。",
+      "width": 305
+    },
+    {
+      "slug": "plant-photo-compare",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "昔と今を、同じ目線で見比べよう。",
+      "width": 375
+    },
+    {
+      "slug": "plant-record-app",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "植物のアプリは、続けたい記録から選ぼう。",
+      "width": 305
+    },
+    {
+      "slug": "plant-record-app",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "植物のアプリは、続けたい記録から選ぼう。",
+      "width": 375
+    },
+    {
+      "slug": "repotting-signs",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "植え替えは、カレンダーと根の都合で。",
+      "width": 305
+    },
+    {
+      "slug": "repotting-signs",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "植え替えは、カレンダーと根の都合で。",
+      "width": 375
+    },
+    {
+      "slug": "watering-when",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "水やりは、日数よりも鉢の中を見よう。",
+      "width": 305
+    },
+    {
+      "slug": "watering-when",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "水やりは、日数よりも鉢の中を見よう。",
+      "width": 375
+    },
+    {
+      "slug": "winter-watering",
+      "frame": "#narrow",
+      "heroLoaded": false,
+      "scrollWidth": 305,
+      "title": "冬の水やりは、「何日おき」より土と室温を見る。",
+      "width": 305
+    },
+    {
+      "slug": "winter-watering",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "冬の水やりは、「何日おき」より土と室温を見る。",
+      "width": 375
+    },
+    {
+      "slug": "yellow-leaves",
+      "frame": "#narrow",
+      "heroLoaded": true,
+      "scrollWidth": 305,
+      "title": "葉が黄色い。どこから変わったか、確かめよう。",
+      "width": 305
+    },
+    {
+      "slug": "yellow-leaves",
+      "frame": "#mobile",
+      "heroLoaded": true,
+      "scrollWidth": 375,
+      "title": "葉が黄色い。どこから変わったか、確かめよう。",
+      "width": 375
+    }
+  ],
+  "promotions": [
+    {
+      "slug": "brown-tips",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_brown-tips"
+    },
+    {
+      "slug": "brown-tips",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_brown-tips"
+    },
+    {
+      "slug": "drooping-leaves",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_drooping-leaves"
+    },
+    {
+      "slug": "drooping-leaves",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_drooping-leaves"
+    },
+    {
+      "slug": "fungus-gnats",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_fungus-gnats"
+    },
+    {
+      "slug": "fungus-gnats",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_fungus-gnats"
+    },
+    {
+      "slug": "houseplant-journal",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_houseplant-journal"
+    },
+    {
+      "slug": "houseplant-journal",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_houseplant-journal"
+    },
+    {
+      "slug": "low-light",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_low-light"
+    },
+    {
+      "slug": "low-light",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_low-light"
+    },
+    {
+      "slug": "overwatered",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_overwatered"
+    },
+    {
+      "slug": "overwatered",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_overwatered"
+    },
+    {
+      "slug": "plant-care-multiple",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-care-multiple"
+    },
+    {
+      "slug": "plant-care-multiple",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-care-multiple"
+    },
+    {
+      "slug": "plant-growth-record",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-growth-record"
+    },
+    {
+      "slug": "plant-growth-record",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-growth-record"
+    },
+    {
+      "slug": "plant-photo-compare",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-photo-compare"
+    },
+    {
+      "slug": "plant-photo-compare",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-photo-compare"
+    },
+    {
+      "slug": "plant-record-app",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-record-app"
+    },
+    {
+      "slug": "plant-record-app",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_plant-record-app"
+    },
+    {
+      "slug": "repotting-signs",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_repotting-signs"
+    },
+    {
+      "slug": "repotting-signs",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_repotting-signs"
+    },
+    {
+      "slug": "watering-when",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_watering-when"
+    },
+    {
+      "slug": "watering-when",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_watering-when"
+    },
+    {
+      "slug": "winter-watering",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_winter-watering"
+    },
+    {
+      "slug": "winter-watering",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_winter-watering"
+    },
+    {
+      "slug": "yellow-leaves",
+      "frame": "#narrow",
+      "bodyScrollWidth": 305,
+      "bodyWidth": 305,
+      "imageHeight": 375,
+      "imageLoaded": true,
+      "imageWidth": 211,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_yellow-leaves"
+    },
+    {
+      "slug": "yellow-leaves",
+      "frame": "#mobile",
+      "bodyScrollWidth": 375,
+      "bodyWidth": 375,
+      "imageHeight": 498,
+      "imageLoaded": true,
+      "imageWidth": 280,
+      "link": "https://apps.apple.com/jp/app/reloha/id6813563330?utm_source=reloha_site&utm_medium=organic&utm_campaign=guide_yellow-leaves"
+    }
+  ],
+  "note": "Four initial image checks were made before loading completed; all four were rechecked successfully. Widths are iframe CSS widths 320 and 390; inner viewports exclude the desktop scrollbar. Not real iPhone Safari.",
+  "rechecked_heroes": {
+    "drooping-leaves": true,
+    "houseplant-journal": true,
+    "overwatered": true,
+    "winter-watering": true
+  }
+}
