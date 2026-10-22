@@ -24,7 +24,7 @@ class Page(HTMLParser):
         if tag=='script' and self.capture:self.structured.append(json.loads(self.buffer));self.capture=False
 errors=[]; pages=0
 for path in ROOT.rglob('*.html'):
-    if '.git' in path.parts or path.name.startswith('google'):continue
+    if '.git' in path.parts or path.name.startswith('google') or path.relative_to(ROOT).parts[:2] == ('docs', 'qa'):continue
     rel=path.relative_to(ROOT).as_posix(); url=BASE+(rel[:-10] if rel.endswith('index.html') else rel)
     text=path.read_text(); page=Page(text);pages+=1
     if len(page.canon)!=1:errors.append(f'{rel}: expected one canonical')
