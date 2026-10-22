@@ -1,0 +1,45 @@
+{
+  "mode": "built-in imagegen",
+  "created": "2026-10-23",
+  "reference_images_used": false,
+  "usage": "Editorial context only; not actual symptoms, app screens, or before-after evidence.",
+  "assets": [
+    {
+      "path": "assets/guide/watering-care.webp",
+      "original": "exec-4dc01c01-d272-458b-904d-0973119f4ba7.png",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 editorial hero for a premium Japanese houseplant care guide. A healthy small pothos in a simple cream nursery pot with visible pot rim, on a pale oak table; a brushed ivory watering can resting nearby, a linen cloth, softly blurred Japanese apartment window behind. Close intimate still-life, natural soft morning side light, rich authentic leaf and soil textures, restrained sage and ivory palette. Watering can is NOT pouring. Only one main plant. No people, no text, no logos, no watermarks, no diagram, no depiction of symptoms. Context photograph-style image, not diagnostic evidence. High-end garden magazine photography, realistic scale and calm composition."
+    },
+    {
+      "path": "assets/guide/leaf-observation.webp",
+      "original": "exec-2f77c934-bca3-4621-a0fa-53f7eb9bbe08.png",
+      "prompt": "Use case: photorealistic-natural. Asset: 3:2 landscape editorial hero for Japanese premium houseplant magazine. Close view of a healthy small rubber plant Ficus elastica with richly textured dark green leaves, a few small fresh leaves, matte ivory pot on a pale wooden table; a single human hand gently supports one leaf from underneath to observe it without pulling. Natural overcast window side light, gentle shadows, authentic leaf veins, calm sage and cream interior softly out of focus. Elegant photographic composition, realistic fingers and botany. No disease, no yellow or necrotic symptoms, no insects, no text, no logos, no watermark. Not a diagnostic photo; contextual illustration of observing a plant. High photographic quality."
+    },
+    {
+      "path": "assets/guide/repotting-care.webp",
+      "original": "exec-404e8246-7a55-46fc-bf1e-841376a7e25f.png",
+      "prompt": "Use case: photorealistic-natural. Asset: premium Japanese plant-care editorial photograph-style hero, landscape 3:2. A tasteful potting workspace on a pale oak table near a bright softly diffused apartment window. One healthy small heartleaf philodendron in a modest terracotta nursery pot, a slightly larger empty terracotta pot lying gently on its side showing a SINGLE REAL DRAINAGE HOLE, a small unbranded metal scoop and a shallow tray of fresh coarse potting mix; folded cream linen and clean garden gloves. No bare roots, no hands, no active procedure, no diseased plants. Botanical leaves realistic, restrained clay/ivory/green palette, naturally imperfect textures and beautiful soft light, magazine art direction. No text, no logos, no watermark. Context image, not evidence of a disease or exact instructional step."
+    },
+    {
+      "path": "assets/guide/indoor-collection.webp",
+      "original": "exec-1e2ee1ec-7581-49d1-b2ce-0713b9ab6480.png",
+      "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial photo-style hero for an elegant Japanese plant magazine. A lived-in but carefully arranged light Japanese apartment plant corner beside a large sheer-curtained window: three healthy potted plants of different heights, a small dark green ZZ plant, a compact rubber plant and a trailing pothos, each on a broad stable oak shelf or low table. Space between pots and leaves, no crowded jungle. Clearly soft daylight REACHING the leaves, window off to the left, not a dark closet, no intense sun. Cream walls, warm oak, sage accents, minimal quiet interior. Realistic lush botanical textures, documentary lifestyle photography. No people, no text, no logos, no watermark, no signs of disease. Landscape, premium and calm."
+    },
+    {
+      "path": "assets/guide/plant-journal.webp",
+      "original": "exec-ccc4df90-fe4c-4f3b-89c0-9624bb276593.png",
+      "prompt": "Use case: photorealistic-natural. Asset: premium Japanese plant journal editorial hero, 3:2 horizontal. Close still life on a warm pale oak writing desk beside a softly lit window: one small healthy heartleaf philodendron in a plain ivory clay pot, an open BLANK cream notebook with completely blank unruled pages and a simple dark green pencil lying alongside, a folded linen cloth. Natural soft morning side light, gentle layered shadows, authentic paper and leaf texture, green/cream/oak palette. Intimate calm sophisticated garden magazine photography. No phone, no screens, no people, no writing, no readable text, no logos, no watermark, no disease. Context image for writing plant observations, not a real user record."
+    },
+    {
+      "path": "assets/guide/plant-photography.webp",
+      "original": "exec-6fb92445-b54e-4c29-bb79-dfff6c8f960e.png",
+      "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 landscape premium Japanese plant photography guide hero. A small healthy rubber plant with fresh green leaves in a plain matte ivory pot on a pale oak table, softly lit by diffused morning window light. In foreground, a black unbranded smartphone in a simple compact tabletop stand/tripod, seen FROM ITS BACK, aimed toward the plant for a consistent eye-level photo. Phone is unobtrusive occupying less than 20 percent of frame, no visible display or UI or identifiable logo, realistic modern hardware and lens. Beautiful calm editorial still life, authentic leaves, cream/sage palette, linen in background. No text, no watermark, no screens, no before-after montage, no invented growth claim. Natural photography mood, not an app screenshot."
+    }
+  ],
+  "processing": "1536x1024 original preserved in scratch; 1200x800 WebP, quality 86, no semantic edits.",
+  "promotion": {
+    "path": "assets/guide/reloha-promotion.webp",
+    "source": "Owner supplied attachment 植物との時間を記録するRELOHA薦広告(5).png",
+    "authorization": "Owner explicitly requested publication and uniform use.",
+    "rights_audit": "Underlying source materials within owner supplied promotion not independently audited."
+  }
+}
