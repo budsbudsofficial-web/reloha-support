@@ -89,6 +89,10 @@
     [
       "houseplant-journal",
       "鉢と用土の変更を記録する"
+    ],
+    [
+      "wilting-after-repotting",
+      "植え替え後にしおれた場合の確認"
     ]
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。"

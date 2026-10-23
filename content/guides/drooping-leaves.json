@@ -89,6 +89,10 @@
     [
       "yellow-leaves",
       "黄色い葉もあるときの確認"
+    ],
+    [
+      "wilting-after-repotting",
+      "植え替え直後からしおれている場合"
     ]
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。"

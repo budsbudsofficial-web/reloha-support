@@ -38,6 +38,25 @@ for path in ROOT.rglob('*.html'):
         if not local.is_file():errors.append(f'{rel}: missing {link}')
 locations=[e.text for e in ET.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 if len(locations)!=len(set(locations)):errors.append('duplicate sitemap URL')
+if (ROOT/'sitemap.txt').read_text().splitlines()!=locations:
+    errors.append('XML and TXT sitemap URLs differ')
+inputs=[json.loads(p.read_text()) for p in (ROOT/'content/guides').glob('*.json')]
+expected_guides={BASE+'guide/'+a['slug']+'/' for a in inputs}
+if expected_guides!={u for u in locations if u.startswith(BASE+'guide/') and u!=BASE+'guide/'}:
+    errors.append('sitemap and article inputs differ')
+index_text=(ROOT/'guide/index.html').read_text()
+index=Page(index_text)
+index_links=[urljoin(BASE+'guide/',u) for u in index.links]
+for a in inputs:
+    url=BASE+'guide/'+a['slug']+'/'
+    if index_links.count(url)!=1:errors.append(f'index must link once to {a["slug"]}')
+    if a['title'] not in index_text or a['description'] not in index_text:
+        errors.append(f'index metadata out of sync: {a["slug"]}')
+if index_text.count('<nav ')!=index_text.count('</nav>'):
+    errors.append('guide index navigation is not closed')
+lists=[s for s in index.structured if s.get('@type')=='ItemList']
+if len(lists)!=1 or [i['url'] for i in lists[0]['itemListElement']]!=[u for u in index_links if u in expected_guides]:
+    errors.append('index ItemList differs from visible article links')
 for url in locations:
     rel=url.removeprefix(BASE);p=ROOT/rel
     if p.is_dir():p=p/'index.html'

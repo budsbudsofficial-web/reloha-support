@@ -44,5 +44,31 @@ for path in sorted((ROOT/'content/guides').glob('*.json')):
 <section class="section related"><h2>あわせて読みたい</h2>{related}<a href="../">植物ガイドをすべて見る<span aria-hidden="true">↗</span></a></section>
 <section class="section sources" id="sources"><h2>参考情報と編集方針</h2><p>{esc(source_intro)}</p><ol>{refs}</ol><p class="small">確認日：2026年10月23日。{esc(source_note)}</p></section>
 <footer><a href="../../">RELOHA公式サイト</a><a href="../../privacy.html">プライバシーポリシー</a><a href="mailto:budsbuds.official@gmail.com">お問い合わせ</a><span>© RELOHA</span></footer></article></main></body></html>'''
-    out=ROOT/'guide'/slug/'index.html';out.write_text(text)
+    out=ROOT/'guide'/slug/'index.html';out.parent.mkdir(parents=True,exist_ok=True);out.write_text(text)
     print(f'Built {out.relative_to(ROOT)}')
+
+# Build discovery surfaces from the same article inputs so new articles cannot be
+# published without index links, QA coverage and synchronized sitemap formats.
+import re
+import xml.etree.ElementTree as ET
+articles={a['slug']:a for a in (json.loads(p.read_text()) for p in sorted((ROOT/'content/guides').glob('*.json')))}
+order=json.loads((ROOT/'content/guide-order.json').read_text())
+assert len(order)==len(set(order)) and set(order)==set(articles), 'Guide order must contain each article exactly once'
+items=''.join(f'<a class="item" href="{BASE}guide/{esc(slug)}/"><strong>{esc(articles[slug]["title"])} ↗</strong><p>{esc(articles[slug]["description"])}</p></a>' for slug in order)
+schema={'@context':'https://schema.org','@type':'ItemList','numberOfItems':len(order),'itemListElement':[{'@type':'ListItem','position':i,'url':BASE+'guide/'+slug+'/','name':articles[slug]['title']} for i,slug in enumerate(order,1)]}
+index=(ROOT/'content/guide-index.template').read_text().replace('{{GUIDE_ITEMS}}',items).replace('{{GUIDE_SCHEMA}}','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script>')
+(ROOT/'guide/index.html').write_text(index)
+ns='{http://www.sitemaps.org/schemas/sitemap/0.9}'
+old=[e.text for e in ET.parse(ROOT/'sitemap.xml').iter(ns+'loc')]
+locations=[url for url in old if not url.startswith(BASE+'guide/')]+[BASE+'guide/']+[BASE+'guide/'+slug+'/' for slug in order]
+assert len(locations)==len(set(locations))
+xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+esc(url)+'</loc></url>\n' for url in locations)+'</urlset>\n'
+(ROOT/'sitemap.xml').write_text(xml)
+(ROOT/'sitemap.txt').write_text('\n'.join(locations)+'\n')
+qa=ROOT/'docs/qa/all-guides.html'
+text=qa.read_text()
+options=''.join('<option value="'+esc(slug)+'">'+esc(a['title'])+'</option>' for slug,a in sorted(articles.items()))
+text=re.sub(r'(<select id="article">).*?(</select>)',lambda m:m[1]+options+m[2],text)
+text=re.sub(r'RELOHA 全\d+記事',f'RELOHA 全{len(articles)}記事',text)
+qa.write_text(text)
+print(f'Built index, {len(locations)} sitemap URLs, and {len(articles)} QA choices')
