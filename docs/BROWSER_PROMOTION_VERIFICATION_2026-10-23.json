@@ -1,0 +1,40 @@
+{
+  "browser": "Cloud Chrome",
+  "real_iphone_safari": false,
+  "initial_content_commit": "3d3016eadd38661e1b19b1a69776c44962b4f7ee",
+  "final_content_commit": "c036a25c5319d1c94e6df4d4d1a5ba7f00818b81",
+  "qa_revision": "cec9872a51c9f226f71ccaa3cc44a2fab1ecf6c8",
+  "all_article_layout": {
+    "articles": 16,
+    "iframe_widths": [320, 390],
+    "document_client_widths": [305, 375],
+    "checks": 32,
+    "horizontal_document_overflow": 0,
+    "external_analytics_scripts_in_frames": 0
+  },
+  "hero_images": {
+    "initial_loading_checks": 11,
+    "rechecked_articles": ["drooping-leaves", "fungus-gnats", "holiday-plant-care", "houseplant-journal", "overwatered", "plant-growth-record", "watering-when", "winter-watering"],
+    "all_rechecked_images_loaded": true,
+    "rechecked_natural_width": 1200
+  },
+  "new_article_interactions": {
+    "articles": ["holiday-plant-care", "wilting-after-repotting"],
+    "faq_open_checks": 4,
+    "faq_open_passed": 4,
+    "table_regions": {"client_widths": [259, 329], "scroll_width": 600, "overflow_x": "auto"},
+    "toc_navigation_checked": true,
+    "promotion": {"initially_loading": true, "rechecked_all_four_loaded": true, "natural_width": 941, "natural_height": 1672, "rendered_ratios": [0.5628073685087939, 0.5628140703517588]},
+    "app_store_campaigns": ["guide_holiday-plant-care", "guide_wilting-after-repotting"],
+    "additional_self_test_store_clicks": 0
+  },
+  "final_copy_recheck": {
+    "cache_issue_observed": true,
+    "used_versioned_qa_url": true,
+    "new_article_layout_checks": 4,
+    "horizontal_document_overflow": 0,
+    "holiday_cta": "出発前と帰宅後を、見比べよう。",
+    "repotting_h1": "植え替え後に、しおれたら。水を足す前に確かめよう。",
+    "repotting_cta": "植え替え前と、その後を残そう。"
+  }
+}
