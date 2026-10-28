@@ -98,7 +98,12 @@
     [
       "overwatered",
       "土が乾かない・根腐れを疑ったら"
+    ],
+    [
+      "fertilizer-when",
+      "弱った株に肥料を足す前に"
     ]
   ],
-  "lead_tail": "調整しましょう。"
+  "lead_tail": "調整しましょう。",
+  "date_modified": "2026-10-29"
 }
