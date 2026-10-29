@@ -57,7 +57,12 @@ import xml.etree.ElementTree as ET
 articles={a['slug']:a for a in (json.loads(p.read_text()) for p in sorted((ROOT/'content/guides').glob('*.json')))}
 order=json.loads((ROOT/'content/guide-order.json').read_text())
 assert len(order)==len(set(order)) and set(order)==set(articles), 'Guide order must contain each article exactly once'
-items=''.join(f'<a class="item" href="{BASE}guide/{esc(slug)}/"><strong>{esc(articles[slug]["title"])} ↗</strong><p>{esc(articles[slug]["description"])}</p></a>' for slug in order)
+items=''
+for i,slug in enumerate(order):
+    a=articles[slug]
+    src='../assets/guide/'+a.get('image',slug)+'.webp'
+    badge='NEW / 新着' if i<2 else a['category']
+    items+=f'''<a class="item{' featured' if i<2 else ''}" href="{esc(slug)}/"><div class="card-image"><img src="{src}" alt="{esc(a['image_alt'])}" width="1200" height="800" loading="{'eager' if i<2 else 'lazy'}"><span class="card-badge">{esc(badge)}</span></div><div class="card-copy"><p class="card-category">{esc(a['category'])}</p><h2>{esc(a['title'])}</h2><p class="card-description">{esc(a['description'])}</p><span class="card-link">記事を読む <span aria-hidden="true">↗</span></span></div></a>'''
 schema={'@context':'https://schema.org','@type':'ItemList','numberOfItems':len(order),'itemListElement':[{'@type':'ListItem','position':i,'url':BASE+'guide/'+slug+'/','name':articles[slug]['title']} for i,slug in enumerate(order,1)]}
 index=(ROOT/'content/guide-index.template').read_text().replace('{{GUIDE_ITEMS}}',items).replace('{{GUIDE_SCHEMA}}','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script>')
 (ROOT/'guide/index.html').write_text(index)

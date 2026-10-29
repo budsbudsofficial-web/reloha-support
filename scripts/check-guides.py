@@ -45,7 +45,8 @@ for data in sorted((ROOT/'content/guides').glob('*.json')):
         if dest.fragment and target.suffix=='.html':
             ids=page.ids if target==path else Page(target.read_text()).ids
             if unquote(dest.fragment) not in ids:errors.append(f'{slug}: missing fragment {link}')
-    if len(page.images)!=2:errors.append(f'{slug}: expected hero and common promotion')
+    expected_images=2+sum(s['body'].count('<img ') for s in a['sections'])
+    if len(page.images)!=expected_images:errors.append(f'{slug}: article images differ from content')
     for image in page.images:
         for key in ['src','alt','width','height']:
             if not image.get(key):errors.append(f'{slug}: image missing {key}')

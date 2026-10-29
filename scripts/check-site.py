@@ -8,9 +8,10 @@ BASE = 'https://budsbudsofficial-web.github.io/reloha-support/'
 ROOT = Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
     def __init__(self, text):
-        super().__init__(); self.links=[]; self.canon=[]; self.scripts=[]; self.structured=[]; self.capture=False; self.buffer=''; self.feed(text)
+        super().__init__(); self.links=[]; self.article_links=[]; self.canon=[]; self.scripts=[]; self.structured=[]; self.capture=False; self.buffer=''; self.feed(text)
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
+        if tag=='a' and 'item' in a.get('class','').split():self.article_links.append(a['href'])
         if tag in ('a','img','script','iframe'):
             val=a.get('href') if tag=='a' else a.get('src')
             if val:self.links.append(val)
@@ -47,15 +48,16 @@ if expected_guides!={u for u in locations if u.startswith(BASE+'guide/') and u!=
 index_text=(ROOT/'guide/index.html').read_text()
 index=Page(index_text)
 index_links=[urljoin(BASE+'guide/',u) for u in index.links]
+article_links=[urljoin(BASE+'guide/',u) for u in index.article_links]
 for a in inputs:
     url=BASE+'guide/'+a['slug']+'/'
-    if index_links.count(url)!=1:errors.append(f'index must link once to {a["slug"]}')
+    if article_links.count(url)!=1:errors.append(f'index must contain one article card for {a["slug"]}')
     if a['title'] not in index_text or a['description'] not in index_text:
         errors.append(f'index metadata out of sync: {a["slug"]}')
 if index_text.count('<nav ')!=index_text.count('</nav>'):
     errors.append('guide index navigation is not closed')
 lists=[s for s in index.structured if s.get('@type')=='ItemList']
-if len(lists)!=1 or [i['url'] for i in lists[0]['itemListElement']]!=[u for u in index_links if u in expected_guides]:
+if len(lists)!=1 or [i['url'] for i in lists[0]['itemListElement']]!=article_links:
     errors.append('index ItemList differs from visible article links')
 for url in locations:
     rel=url.removeprefix(BASE);p=ROOT/rel

@@ -98,9 +98,13 @@
     [
       "wilting-after-repotting",
       "植え替え後にしおれた場合の確認"
+    ],
+    [
+      "new-houseplant-first-day",
+      "買ったばかりの株、まず何をする？"
     ]
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。",
-  "date_modified": "2026-10-29",
+  "date_modified": "2026-10-30",
   "lead_tail": ""
 }
