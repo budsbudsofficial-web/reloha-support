@@ -93,8 +93,13 @@
     [
       "fertilizer-when",
       "弱った株に肥料を足す前に"
+    ],
+    [
+      "white-mold-potting-soil",
+      "観葉植物の土に白いカビ？見分ける手掛かりと取り除く前の確認"
     ]
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。",
-  "date_modified": "2026-10-29"
+  "date_modified": "2026-11-07",
+  "sources_checked": "2026-10-29"
 }

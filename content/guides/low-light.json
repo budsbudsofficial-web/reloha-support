@@ -99,7 +99,13 @@
     [
       "plant-growth-record",
       "新しい葉を写真で記録する"
+    ],
+    [
+      "winter-houseplant-location",
+      "冬の観葉植物はどこに置く？窓際の寒さ・暖房の風・夜の移動を確認"
     ]
   ],
-  "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。"
+  "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。",
+  "sources_checked": "2026-10-23",
+  "date_modified": "2026-11-07"
 }

@@ -1,5 +1,5 @@
 {
-  "date_modified": "2026-10-30",
+  "date_modified": "2026-11-07",
   "source_intro": "大学の公開情報を確認し、RELOHA編集部が初心者向けの手順にまとめました。写真は実践結果ではなくAI生成のイメージです。種類ごとの管理は購入店やラベルの案内を優先してください。",
   "source_note": "海外の季節や室温を日本へ一律に当てはめていません。RELOHAを運営する編集部による自社記事です。",
   "slug": "clean-houseplant-leaves",
@@ -78,6 +78,11 @@
     [
       "new-houseplant-first-day",
       "買ったばかりの植物、初日に見るところ"
+    ],
+    [
+      "spider-mites-houseplants",
+      "観葉植物にハダニ？葉裏の見分け方と、見つけたときの初動"
     ]
-  ]
+  ],
+  "sources_checked": "2026-10-30"
 }

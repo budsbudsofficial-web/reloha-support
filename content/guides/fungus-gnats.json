@@ -93,7 +93,13 @@
     [
       "repotting-signs",
       "植え替えのタイミングを見分ける"
+    ],
+    [
+      "white-mold-potting-soil",
+      "観葉植物の土に白いカビ？見分ける手掛かりと取り除く前の確認"
     ]
   ],
-  "lead_tail": "分けて考えます。"
+  "lead_tail": "分けて考えます。",
+  "sources_checked": "2026-10-23",
+  "date_modified": "2026-11-07"
 }

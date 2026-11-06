@@ -102,8 +102,13 @@
     [
       "fertilizer-when",
       "弱った株に肥料を足す前に"
+    ],
+    [
+      "winter-houseplant-location",
+      "冬の観葉植物はどこに置く？窓際の寒さ・暖房の風・夜の移動を確認"
     ]
   ],
   "lead_tail": "調整しましょう。",
-  "date_modified": "2026-10-29"
+  "date_modified": "2026-11-07",
+  "sources_checked": "2026-10-29"
 }
