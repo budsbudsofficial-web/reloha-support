@@ -20,7 +20,7 @@
     {
       "id": "place",
       "title": "② 夜の移動先を、先に一つ決める",
-      "body": "<div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"冬の置き場所のチェック\"><table><thead><tr><th scope=\"col\">気になる状態</th><th scope=\"col\">先に確認すること</th></tr></thead><tbody><tr><td>葉が冷たいガラスに触れる</td><td>接触を避ける位置へ。夜の鉢周辺の温度も確認。</td></tr><tr><td>エアコンの風で葉が揺れる</td><td>風向きや置き場所を調整し、直風を避ける。</td></tr><tr><td>移動先が一日中暗い</td><td>寒さだけでなく明るさも比較する。</td></tr><tr><td>部屋の表示温度は暖かい</td><td>表示場所と鉢のそばで条件が違わないか測る。</td></tr></tbody></table></div><p>夜だけ移動するなら、戻す場所と移動先を決めておくと迷いません。例えば「昼は窓の手前の台、夜は同じ部屋の内側の台」とメモ。これは配置例であり、全家庭の正解ではありません。最低温度の目安は種類・品種の案内で確認してください。</p>"
+      "body": "<div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"冬の置き場所のチェック\"><table><thead><tr><th scope=\"col\">気になる状態</th><th scope=\"col\">先に確認すること</th></tr></thead><tbody><tr><td>葉が冷たいガラスに触れる</td><td>接触を避ける位置へ。夜の鉢周辺の温度も確認。</td></tr><tr><td>エアコンの風で葉が揺れる</td><td>風向きや置き場所を調整し、直風を避ける。</td></tr><tr><td>移動先が一日中暗い</td><td>寒さだけでなく明るさも比較する。</td></tr><tr><td>部屋の表示温度は暖かい</td><td>表示場所と鉢のそばで条件が違わないか測る。</td></tr></tbody></table></div><p>夜だけ移動するなら、戻す場所と移動先を決めておくと迷いません。例えば「昼は窓の手前の台、夜は同じ部屋の内側の台」とメモ。これは配置例であり、全家庭の正解ではありません。最低温度の目安は種類・品種の案内で確認してください。</p><h3>今夜、窓側と移動先を同じ時間に比べる</h3><p>暖房を切った後と翌朝に、普段の鉢のそばと移動候補の温度をそれぞれ記録します。カーテンを閉める家では、鉢がカーテンのどちら側にあるかもメモ。室内の表示温度だけで判断せず、翌日には候補の場所に日中どれくらい光が入るかも比べましょう。温度差が小さくても、葉に冷気や暖房の風が直接当たる場所は避けます。<a href=\"#source-3\">［3］</a></p>"
     },
     {
       "id": "water",
@@ -57,6 +57,11 @@
       "name": "メリーランド大学：冬の室内植物の問題",
       "url": "https://extension.umd.edu/resource/winter-indoor-plant-problems",
       "scope": "冬の水やりと光・室温、土の湿り気の確認"
+    },
+    {
+      "name": "University of Wisconsin–Madison Extension：Winter Care of Houseplants",
+      "url": "https://chippewa.extension.wisc.edu/2024/01/05/winter-care-of-houseplants/",
+      "scope": "冬の窓やドア付近の冷気と暖房の直風（2026-11-10確認）"
     }
   ],
   "related": [
@@ -75,7 +80,7 @@
   ],
   "cta_title": "今日の状態を、一枚残そう。",
   "cta": "RELOHAに写真とお世話を残し、置き場所を変える前後の姿を見比べましょう。",
-  "date_modified": "2026-11-07",
+  "date_modified": "2026-11-10",
   "date_published": "2026-11-07",
   "sources_checked": "2026-11-07",
   "image": "winter-houseplant-location",
