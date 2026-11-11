@@ -22,7 +22,7 @@
     {
       "id": "room-check",
       "title": "部屋を決める前に、4つの条件を見る",
-      "body": "<p class=\"scroll-note\">表は横にスクロールできます。</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"室内の光を確認する場所\"><table><thead><tr><th scope=\"col\">確認するもの</th><th scope=\"col\">見落としやすいこと</th><th scope=\"col\">調整の候補</th></tr></thead><tbody><tr><th scope=\"row\">窓から葉までの距離</th><td>同じ部屋でも奥ほど暗くなる</td><td>植物を安全に窓へ近づける</td></tr><tr><th scope=\"row\">光が届く時間</th><td>昼の一瞬だけ明るい場合がある</td><td>朝・昼・夕の条件をメモ</td></tr><tr><th scope=\"row\">光を遮るもの</th><td>厚いカーテン、庇、建物、棚の天板</td><td>遮りを減らせるか確認</td></tr><tr><th scope=\"row\">葉の向きと密度</th><td>前の株が後ろの株を隠す</td><td>鉢同士の間隔や配置を調整</td></tr></tbody></table></div><p>「窓から必ず○m以内」と固定するより、窓の大きさ、方角、周囲の建物、季節を合わせて考えます。スマホの照度アプリは比較の補助にはなりますが、機種差があり、専用計測器と同じ精度とは限りません。<a href=\"#source-1\">［1］</a></p>"
+      "body": "<p class=\"scroll-note\">表は横にスクロールできます。</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"室内の光を確認する場所\"><table><thead><tr><th scope=\"col\">確認するもの</th><th scope=\"col\">見落としやすいこと</th><th scope=\"col\">調整の候補</th></tr></thead><tbody><tr><th scope=\"row\">窓から葉までの距離</th><td>同じ部屋でも奥ほど暗くなる</td><td>植物を安全に窓へ近づける</td></tr><tr><th scope=\"row\">光が届く時間</th><td>昼の一瞬だけ明るい場合がある</td><td>朝・昼・夕の条件をメモ</td></tr><tr><th scope=\"row\">光を遮るもの</th><td>厚いカーテン、庇、建物、棚の天板</td><td>遮りを減らせるか確認</td></tr><tr><th scope=\"row\">葉の向きと密度</th><td>前の株が後ろの株を隠す</td><td>鉢同士の間隔や配置を調整</td></tr></tbody></table></div><p>「窓から必ず○m以内」と固定するより、窓の大きさ、方角、周囲の建物、季節を合わせて考えます。スマホの照度アプリは比較の補助にはなりますが、機種差があり、専用計測器と同じ精度とは限りません。<a href=\"#source-1\">［1］</a></p><div class=\"note\"><p><strong>冬に置き場所を変えるなら、鉢を動かす前に2か所を比べます。</strong>今の棚と移動候補で、同じ日の午前と午後に、葉と同じ高さから窓を見ます。ひさしや向かいの建物で窓が遮られる時間、カーテンを閉める時間をメモしましょう。窓からの距離や遮り方で届く光は変わります。<a href=\"#source-1\">［1］</a></p><p>昼に明るくても、夜に冷える窓際なら、少し室内側の明るい場所も候補に。暗さと冷え込みは別々に確認します。<a href=\"../winter-houseplant-location/\">冬の置き場所で夜の冷えを確かめる方法</a>も参考にしてください。</p></div>"
     },
     {
       "id": "symptoms",
@@ -106,6 +106,6 @@
     ]
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。",
-  "sources_checked": "2026-10-23",
-  "date_modified": "2026-11-07"
+  "sources_checked": "2026-11-12",
+  "date_modified": "2026-11-12"
 }
