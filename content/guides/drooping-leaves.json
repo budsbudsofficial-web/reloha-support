@@ -17,7 +17,7 @@
     {
       "id": "first-check",
       "title": "最初は、土の乾湿と株元を同時に確認",
-      "body": "<p>葉だけを見て原因を決めると、水を必要としていない鉢へ追加することがあります。表土の色、触れられる範囲の用土の中、鉢の重さを確認します。鉢カバーに水が残っていないかも見てください。<a href=\"#source-1\">［1］</a></p><p class=\"scroll-note\">表は横にスクロールできます。</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"しおれた鉢の確認\"><table><thead><tr><th scope=\"col\">今の鉢・株の様子</th><th scope=\"col\">考えられる方向</th><th scope=\"col\">最初の対応</th></tr></thead><tbody><tr><th scope=\"row\">中も乾き、鉢が軽い</th><td>水不足・水がしみ込んでいない可能性</td><td>植物に合う水やりと吸水状態の確認</td></tr><tr><th scope=\"row\">中は湿り、鉢が重い</th><td>根の傷み・排水・低温など</td><td>水を追加せず、排水と根元を点検</td></tr><tr><th scope=\"row\">日中の強い光や熱の後にしおれる</th><td>熱・蒸散と根からの吸水の不均衡</td><td>強い熱や直風を避け、土を確認</td></tr><tr><th scope=\"row\">移動や植え替え直後</th><td>環境変化・根への負担など</td><td>再植え替えを急がず、履歴と乾湿を確認</td></tr><tr><th scope=\"row\">株元や茎が柔らかい、急に倒れる</th><td>進行した傷みの可能性</td><td>他の株との接触を避けて早めに相談</td></tr></tbody></table></div><p>種類によって葉の角度や夜間の動きは異なります。いつもの姿と比べて変化が続くかも確認し、表だけで病名を確定しないようにします。</p>"
+      "body": "<p>葉だけを見て原因を決めると、水を必要としていない鉢へ追加することがあります。表土の色、触れられる範囲の用土の中、鉢の重さを確認します。鉢カバーに水が残っていないかも見てください。<a href=\"#source-1\">［1］</a></p><p class=\"scroll-note\">表は横にスクロールできます。</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"しおれた鉢の確認\"><table><thead><tr><th scope=\"col\">今の鉢・株の様子</th><th scope=\"col\">考えられる方向</th><th scope=\"col\">最初の対応</th></tr></thead><tbody><tr><th scope=\"row\">中も乾き、鉢が軽い</th><td>水不足・水がしみ込んでいない可能性</td><td>植物に合う水やりと吸水状態の確認</td></tr><tr><th scope=\"row\">中は湿り、鉢が重い</th><td>根の傷み・排水・低温など</td><td>水を追加せず、排水と根元を点検</td></tr><tr><th scope=\"row\">日中の強い光や熱の後にしおれる</th><td>熱・蒸散と根からの吸水の不均衡</td><td>強い熱や直風を避け、土を確認</td></tr><tr><th scope=\"row\">移動や植え替え直後</th><td>環境変化・根への負担など</td><td>再植え替えを急がず、履歴と乾湿を確認</td></tr><tr><th scope=\"row\">株元や茎が柔らかい、急に倒れる</th><td>進行した傷みの可能性</td><td>他の株との接触を避けて早めに相談</td></tr></tbody></table></div><p>種類によって葉の角度や夜間の動きは異なります。いつもの姿と比べて変化が続くかも確認し、表だけで病名を確定しないようにします。</p><h3>冬の朝にしおれていたら：土と窓際を確認</h3><p>鉢の中がまだ湿っているなら、水は足さず、受け皿や鉢カバーに水が残っていないか見ます。根が傷むと、土が湿っていても葉へ水を運べず、しおれることがあります。<a href=\"#source-4\">［4］</a> 次に、葉が窓ガラスに触れていないか、暖房の風が直接当たっていないかを確認。置き場所を変える場合は<a href=\"../winter-houseplant-location/\">冬の窓際と移動先の比べ方</a>を参考にしてください。</p>"
     },
     {
       "id": "dry",
@@ -75,6 +75,11 @@
       "name": "RHS：How to help a poorly houseplant",
       "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant",
       "scope": "光・乾湿・温度などを順に確認する考え方"
+    },
+    {
+      "name": "メリーランド大学 Extension：冬の室内植物の問題",
+      "url": "https://extension.umd.edu/resource/winter-indoor-plant-problems",
+      "scope": "湿った土でも根の傷みでしおれることがある（2026-11-14確認）"
     }
   ],
   "related": [
@@ -97,5 +102,5 @@
   ],
   "image_caption": "AI生成によるイメージ。実際の症例・操作画面・成長比較写真ではありません。",
   "sources_checked": "2026-10-23",
-  "date_modified": "2026-11-07"
+  "date_modified": "2026-11-14"
 }
