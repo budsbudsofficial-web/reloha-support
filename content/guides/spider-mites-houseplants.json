@@ -1,10 +1,10 @@
 {
   "slug": "spider-mites-houseplants",
   "category": "葉裏と虫の確認",
-  "title": "観葉植物にハダニ？葉裏の見分け方と、見つけたときの初動",
-  "heading": "観葉植物にハダニ？葉裏の見分け方と、見つけたときの初動",
-  "description": "観葉植物の葉に細かな白い点や糸を見つけたら。ハダニを疑うサイン、葉裏と白い紙での確認、鉢を離す・水で洗う際の注意と再観察の順序をまとめました。",
-  "lead": "葉がなんとなく白っぽい。よく見ると、細かい点。薬を探す前に、まず葉の裏側を見てみましょう。",
+  "title": "観葉植物の葉に白い点や細い糸｜ハダニの見分け方と冬の対処",
+  "heading": "観葉植物の葉に白い点や細い糸｜ハダニの見分け方と冬の対処",
+  "description": "暖房を使い始めて観葉植物の葉に白い点や細い糸が出たら。葉裏と白い紙でハダニを見分ける手順、鉢を離す目安、水洗い後の再確認を紹介します。",
+  "lead": "暖房を使い始めてから、葉に針先ほどの白い点が増えていませんか。まず、点がある葉を裏返してみましょう。",
   "answer": "<strong>葉の色だけでハダニと決めず、葉裏・細い糸・動く小さな点を確認します。</strong>疑わしい鉢はほかの株から離し、植物に合う方法で対処。写真だけの断定や、一度の葉水で解決したつもりになるのは避けましょう。",
   "quick": [
     "葉裏を虫眼鏡で見て、動く点や細い糸を確認する。",
@@ -15,12 +15,12 @@
     {
       "id": "signs",
       "title": "① 白い点だけでは、まだ決めない",
-      "body": "<p>ハダニでは葉の細かな色抜けや糸が手掛かりになります。ただし似た症状を起こす虫もあり、赤いものだけがハダニとは限りません。葉裏を拡大して確認し、白い紙を下に置いて葉を軽くたたき、落ちた点が動くかを見る方法もあります。<a href=\"#source-1\">［1］</a></p><figure class=\"inline-figure\"><img src=\"../../assets/guide/spider-mites-houseplants.webp\" alt=\"虫眼鏡で葉の裏側を見る手元\" width=\"1200\" height=\"800\" loading=\"lazy\"><figcaption>確認するのは葉裏。これは虫の同定写真ではありません。（AI生成のイメージ）</figcaption></figure>"
+      "body": "<p>冬でも、暖房で暖かく乾いた室内ではハダニが増えやすくなります。糸が見えるまで待たず、色が抜けた葉の裏から確認しましょう。暖房を使っているだけではハダニとは判断できません。<a href=\"#source-4\">［4］</a></p><p>ハダニでは葉の細かな色抜けや糸が手掛かりになります。ただし似た症状を起こす虫もあり、赤いものだけがハダニとは限りません。葉裏を拡大して確認し、白い紙を下に置いて葉を軽くたたき、落ちた点が動くかを見る方法もあります。<a href=\"#source-1\">［1］</a></p><figure class=\"inline-figure\"><img src=\"../../assets/guide/spider-mites-houseplants.webp\" alt=\"虫眼鏡で葉の裏側を見る手元\" width=\"1200\" height=\"800\" loading=\"lazy\"><figcaption>確認するのは葉裏。これは虫の同定写真ではありません。（AI生成のイメージ）</figcaption></figure>"
     },
     {
       "id": "check",
       "title": "② 見えたものを、短くメモする",
-      "body": "<div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"葉の変化と次の確認\"><table><thead><tr><th scope=\"col\">気になる状態</th><th scope=\"col\">先に確認すること</th></tr></thead><tbody><tr><td>細かな色抜けがある</td><td>同じ葉の裏を拡大して見る。</td></tr><tr><td>葉や芽の周りに細い糸</td><td>糸の周囲と葉裏に小さな点がないか確認。</td></tr><tr><td>白い紙に動く点が落ちた</td><td>拡大写真を残し、種類が不明なら園芸店へ相談。</td></tr><tr><td>点はあるが動くものが見えない</td><td>その場で断定せず、別の葉も確認。</td></tr></tbody></table></div><p>相談用のメモ例は「上の葉3枚に点、下の葉には見えない。葉裏に動く点。糸は不明」。見えなかったことも残せば、思い込みで原因を絞りすぎずに済みます。</p>"
+      "body": "<div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"葉の変化と次の確認\"><table><thead><tr><th scope=\"col\">気になる状態</th><th scope=\"col\">先に確認すること</th></tr></thead><tbody><tr><td>葉先だけが茶色く、白い点が広がっていない</td><td>ハダニと決めず、<a href=\"../brown-tips/\">葉先が茶色くなる原因</a>も確認。</td></tr><tr><td>細かな色抜けがある</td><td>同じ葉の裏を拡大して見る。</td></tr><tr><td>葉や芽の周りに細い糸</td><td>糸の周囲と葉裏に小さな点がないか確認。</td></tr><tr><td>白い紙に動く点が落ちた</td><td>拡大写真を残し、種類が不明なら園芸店へ相談。</td></tr><tr><td>点はあるが動くものが見えない</td><td>その場で断定せず、別の葉も確認。</td></tr></tbody></table></div><p>相談用のメモ例は「上の葉3枚に点、下の葉には見えない。葉裏に動く点。糸は不明」。見えなかったことも残せば、思い込みで原因を絞りすぎずに済みます。</p>"
     },
     {
       "id": "first",
@@ -62,6 +62,11 @@
       "name": "イリノイ大学：観葉植物のお世話",
       "url": "https://extension.illinois.edu/houseplants/care",
       "scope": "毛の多い葉などの洗浄の注意"
+    },
+    {
+      "name": "ミネソタ大学 Extension：室内植物の害虫",
+      "url": "https://extension.umn.edu/about/our-stories/news/houseplant-pests",
+      "scope": "冬の暖かく乾いた室内での発生と白い紙での確認"
     }
   ],
   "related": [
@@ -80,9 +85,9 @@
   ],
   "cta_title": "今日の状態を、一枚残そう。",
   "cta": "RELOHAに対処前後の写真とお世話を残し、同じ葉の変化を見返せるように。",
-  "date_modified": "2026-11-07",
+  "date_modified": "2026-11-15",
   "date_published": "2026-11-07",
-  "sources_checked": "2026-11-07",
+  "sources_checked": "2026-11-15",
   "image": "spider-mites-houseplants",
   "image_alt": "虫眼鏡を使ってポトスの葉裏を確認する手元（AI生成）",
   "source_intro": "大学の園芸情報を確認し、RELOHA編集部が家庭で確認しやすい順に整理しました。種類ごとの管理条件は購入店・生産者の案内を優先してください。",
