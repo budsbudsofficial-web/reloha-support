@@ -3,7 +3,7 @@
   "category": "冬の置き場所",
   "title": "冬の観葉植物はどこに置く？窓際の寒さ・暖房の風・夜の移動を確認",
   "heading": "冬の観葉植物はどこに置く？窓際の寒さ・暖房の風・夜の移動を確認",
-  "description": "冬の観葉植物の置き場所に迷う人へ。昼の明るさだけでなく、夜の窓際の冷えや暖房の直風を確認。鉢のそばで温度を測り、移動先を選ぶ手順を紹介します。",
+  "description": "冬の観葉植物の置き場所に迷う人へ。昼の明るさだけでなく、夜の窓際の冷えや暖房の直風を確認。鉢のそばで温度を測り、移動先を選ぶ手順を紹介します。冷え込んだあと葉が黒ずんだときに、置き場所と鉢の状態を確認する手順も紹介します。",
   "lead": "昼は明るい窓際。でも、夜も同じ条件とは限りません。冬の居場所は「明るいか」と「冷えないか」を分けて考えましょう。",
   "answer": "<strong>種類に合う明るさを確保し、冷たいガラスと冷暖房の直風を避けるのが基本です。</strong>窓から何cm、室温何度なら全種類OKという一律の答えはありません。植物のそばの夜の温度を確認して決めます。",
   "quick": [
@@ -15,7 +15,7 @@
     {
       "id": "window",
       "title": "① 窓際は「昼の光」と「夜の冷え」を別々に見る",
-      "body": "<p>冷たい窓ガラスに葉が触れることや、冷暖房からの急な温度変化は避けます。日中の見た目だけで判断せず、葉とガラスの位置関係、すきま風の有無を確認しましょう。<a href=\"#source-1\">［1］</a></p><figure class=\"inline-figure\"><img src=\"../../assets/guide/winter-houseplant-location.webp\" alt=\"窓から少し室内側へ置いたポトス\" width=\"1200\" height=\"800\" loading=\"lazy\"><figcaption>葉がガラスに触れない位置を探す。写真の距離は推奨値ではありません。（AI生成のイメージ）</figcaption></figure>"
+      "body": "<p>冷たい窓ガラスに葉が触れることや、冷暖房からの急な温度変化は避けます。日中の見た目だけで判断せず、葉とガラスの位置関係、すきま風の有無を確認しましょう。<a href=\"#source-1\">［1］</a></p><figure class=\"inline-figure\"><img src=\"../../assets/guide/winter-houseplant-location.webp\" alt=\"窓から少し室内側へ置いたポトス\" width=\"1200\" height=\"800\" loading=\"lazy\"><figcaption>葉がガラスに触れない位置を探す。写真の距離は推奨値ではありません。（AI生成のイメージ）</figcaption></figure><h3>冷え込んだあと、窓側の葉が黒ずんだら</h3><p>低温で葉や芽が黒ずむことがあり、冷気に当たった日から数日たって症状が出る場合もあります。黒い色だけでは原因を決められません。冷えた夜や換気のあとに、ガラスに近い側から変化したかを確認しましょう。<a href=\"#source-4\">［4］</a></p><p>思い当たる場合は、まずガラスやすきま風を避け、日中に光が入り、暖房の風も直接当たらない位置へ。鉢全体がしおれ、土も湿ったままなら、水を足す前に<a href=\"../overwatered/\">過湿や根の傷みの手掛かり</a>も確認します。移動した日の写真を残し、別の葉にも変化が出るか見比べましょう。</p>"
     },
     {
       "id": "place",
@@ -62,6 +62,11 @@
       "name": "University of Wisconsin–Madison Extension：Winter Care of Houseplants",
       "url": "https://chippewa.extension.wisc.edu/2024/01/05/winter-care-of-houseplants/",
       "scope": "冬の窓やドア付近の冷気と暖房の直風（2026-11-10確認）"
+    },
+    {
+      "name": "メリーランド大学 Extension：室内植物のトラブル診断",
+      "url": "https://www.extension.umd.edu/resource/diagnose-indoor-plant-problems",
+      "scope": "低温による葉・芽の黒ずみと症状が現れる時期、過湿としおれ"
     }
   ],
   "related": [
@@ -80,9 +85,9 @@
   ],
   "cta_title": "今日の状態を、一枚残そう。",
   "cta": "RELOHAに写真とお世話を残し、置き場所を変える前後の姿を見比べましょう。",
-  "date_modified": "2026-11-10",
+  "date_modified": "2026-11-16",
   "date_published": "2026-11-07",
-  "sources_checked": "2026-11-07",
+  "sources_checked": "2026-11-16",
   "image": "winter-houseplant-location",
   "image_alt": "冷たい窓ガラスから葉を離して置いたポトスと温度計（AI生成）",
   "source_intro": "大学の園芸情報を確認し、RELOHA編集部が家庭で確認しやすい順に整理しました。種類ごとの管理条件は購入店・生産者の案内を優先してください。",
